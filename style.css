@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100vh;
+  background-color: #fefcfc;
+}
+.containerOne {
+  margin-bottom: 5em;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.main-pic {
+  margin-top: 3em;
+}
+.other-picture {
+  display: flex;
+  justify-content: space-between;
+}
+.about {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+}
+.about h3,
+p,
+span,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+.about h3,
+p {
+  line-height: 25px;
+}
+.ratings span {
+  color: #13d6a5;
+}
+
+#ratings-color {
+  color: #13d6a5;
+}
+#submit-review {
+  font-size: 12px;
+}
+#tag {
+  font-size: 14px;
+}
+#time {
+  font-size: 13px;
+}
+#time-icon {
+  margin-right: 7px;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.buttons .btn1 {
+  background-color: #1e1e1e;
+  color: #fefcfc;
+  border: none;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.buttons .btn2 {
+  background-color: #fefcfc;
+  border: 1px solid black;
+  font-size: 12px;
+}
+/* containerTwo Css */
+.containerTwo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.childContainer {
+  background-color: white;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.childContainer .box {
+  display: flex;
+  width: 250px;
+}
+.box .details {
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.details .info {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* containerTwo ended */
+/* containerThree */
+.containerThree {
+  height: 100px;
+  background-color: #fefcfc;
+}
+/* containerThree Ended */
+.icon1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #d5d5d5;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrows .fa-chevron-left {
+  position: relative;
+  left: 8px;
+  top: 5px;
+}
+
+.icon2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #d5d5d5;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrows .fa-chevron-right {
+  position: relative;
+  left: 10px;
+  top: 6px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .icon2 {
+    left: 38%;
+  }
+  .icon1 {
+    left: 6%;
+  }
+  .buttons button {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containerOne {
+    margin-bottom: 5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
+    height: 900px;
+  }
+  .icon2 {
+    left: 73%;
+    top: 17%;
+  }
+  .icon1 {
+    left: 20%;
+    top: 17%;
+  }
+  .other-picture {
+    width: 100%;
+  }
+  .other-picture .secondary-pic {
+    width: 40px;
+    height: 40px;
+  }
+  .main-pic {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 20em;
+  }
+  .about {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .childContainer {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .main-pic {
+    margin-top: 40em;
+  }
+  .containerOne {
+    height: 1800px;
+  }
+  .buttons button {
+    padding: 5px 10px;
+  }
+  .about h3,
+  p {
+    line-height: 25px;
+  }
+  .containerTwo h3 {
+    font-size: 15px;
+  }
+  .containerTwo p {
+    font-size: 10px;
+  }
+  .other-picture .secondary-pic {
+    width: 30px;
+    height: 30px;
+  }
+  .about h1 {
+    font-size: 25px;
+  }
+  .about h3 {
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+  #tag {
+    font-size: 12px;
+    margin: 10px 0px;
+  }
+  #ratings-color {
+    font-size: 10px;
+  }
+  .about p {
+    font-size: 10px;
+    margin: 10px 0px;
+  }
+  .about h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .btn2 {
+    padding: 3px 8px;
+    font-size: 6px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .icon2 {
+    left: 70%;
+    top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon1 {
+    left: 21%;
+    top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
